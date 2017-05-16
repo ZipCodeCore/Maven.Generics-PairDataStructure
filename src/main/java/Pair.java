@@ -1,13 +1,13 @@
-public class Pair<T> {
+public class Pair<T, U> {
     private T first;
-    private T second;
+    private U second;
 
     public Pair() {
         first = null;
         second = null;
     }
 
-    public Pair(T first, T second) {
+    public Pair(T first, U second) {
         this.first = first;
         this.second = second;
     }
@@ -16,7 +16,7 @@ public class Pair<T> {
         return first;
     }
 
-    public T getSecond() {
+    public U getSecond() {
         return second;
     }
 
@@ -24,7 +24,7 @@ public class Pair<T> {
         first = newValue;
     }
 
-    public void setSecond(T newValue) {
+    public void setSecond(U newValue) {
         second = newValue;
     }
 }
